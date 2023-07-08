@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIẤY CUỘN</title>
+    <link rel="stylesheet" href="./css/style_giay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        function Binhluan()
+        {
+            var a = document.dataform.ykien.value
+            document.getElementById('guiyk').innerHTML=a
+        };
+        $(document).ready(function(){
+            $("#show__nguyenlieu__menu").hide();
+            $("#header__nguyenlieu__menu").mouseenter(function(){
+                $("#header__nguyenlieu__menu").slideDown(function(){
+                    $("#show__nguyenlieu__menu").show();
+                }),
+                $("#header__nguyenlieu__menu").mouseleave(function(){
+                    $("#show__nguyenlieu__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__go__menu").hide();
+            $("#show__nguyenlieugo__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugo__menu").slideDown(function(){
+                    $("#show__go__menu").show();
+                    $("#go").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#go").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugo__menu").mouseleave(function(){
+                    $("#show__go__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__vai__menu").hide();
+            $("#show__nguyenlieuvai__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieuvai__menu").slideDown(function(){
+                    $("#show__vai__menu").show(),
+                    $("#vai").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#vai").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieuvai__menu").mouseleave(function(){
+                    $("#show__vai__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__giay__menu").hide();
+            $("#show__nguyenlieugiay__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugiay__menu").slideDown(function(){
+                    $("#show__giay__menu").show(),
+                    $("#giay").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#giay").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugiay__menu").mouseleave(function(){
+                    $("#show__giay__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#hoahuongduong").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#hoahuongduong").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#hoahuongduong").click(function()
+            {
+                window.location="hoahuongduong.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#quilling").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#quilling").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#quilling").click(function()
+            {
+                window.location="giaycuon.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#keptoc").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#keptoc").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#keptoc").click(function()
+            {
+                window.location="keptoc.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#lotly").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#lotly").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#lotly").click(function()
+            {
+                window.location="lotly.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#nhago").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#nhago").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#nhago").click(function()
+            {
+                window.location="nhago.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#tuivai").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#tuivai").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#tuivai").click(function()
+            {
+                window.location="tuivai.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#trangchu").click(function()
+            {
+                window.location="trangchu.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#gioithieu").click(function()
+            {
+                window.location="gioithieu.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#hoa").click(function()
+            {
+                window.location="hoahuongduong.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#kep").click(function()
+            {
+                window.location="keptoc.html"
+            })
+        });
+
+        $('#slide_show > li:first').css('display', 'block').addClass('active');
+  var isHoverBtn = false;
+
+  $('#next_slide').bind('click', function() {
+    runSlide(true);
+  });
+
+  $('#prev_slide').bind('click', function() {
+    runSlide(false);
+  });
+
+  $('.slide_btn').hover(function() {
+    isHoverBtn = true;
+  }, function() {
+    isHoverBtn = false;
+  });
+
+  setInterval(function(){
+    if (!isHoverBtn) {
+      runSlide(true);
+    }
+  }, 3000);
+
+
+  function runSlide(isNext) {
+    var oldItem = $('#slide_show > li.active');
+    var newItem;
+  
+    if (isNext) {
+      newItem = oldItem.next();
+
+      if (newItem.length === 0) {
+        newItem = $('#slide_show > li:first');
+      }
+    } else {
+      newItem = oldItem.prev();
+
+      if (newItem.length === 0) {
+        newItem = $('#slide_show > li:last');
+      }
+    }
+
+    if (newItem.length === 0) {
+      newItem = $('#slide_show > li:eq(0)');
+    }
+
+    oldItem.fadeOut(function() {
+      $(this).removeClass('active');
+    });
+
+    newItem.fadeIn(function() {
+        $(this).addClass('active');
+      });
+  }
+    </script>
+</head>
+<body>
+    <header>
+        <menu class="header__thanhcongcu__menu">
+            <div class="header__logo__image">
+                <img src="./Anh/logo.png" alt="" height="50px">
+            </div>
+            <div class="header__congcu__menu">
+                <p id="trangchu"><i class="fa fa-home" aria-hidden="true"></i>Trang chủ</p>
+            </div>
+            <div class="header__congcu2__menu">
+                <p id="gioithieu">Giới thiệu</p>
+            </div>
+            <div id="header__nguyenlieu__menu">
+                <p><b>Nguyên liệu</b> <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                <ul id="show__nguyenlieu__menu">
+                    <li id="show__nguyenlieu__li">
+                        <div id="show__nguyenlieugo__menu">
+                            <p><span class="header__nguyenlieugo__text" id="go">Gỗ</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__go__menu">
+                                <p id="lotly">Đồ lót ly</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="nhago">Nhà gỗ</p>
+                            </div>
+                        </div>
+                        <hr size="1px" color="darkgrey">
+                        <div id="show__nguyenlieuvai__menu">
+                            <p><span class="header__nguyenlieuvai__text" id="vai">Vải</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__vai__menu">
+                                <p id="tuivai">Túi vải</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="keptoc">Kẹp tóc</p>
+                            </div>
+                        </div>
+                        <hr size="1px" color="darkgrey">
+                        <div id="show__nguyenlieugiay__menu">
+                            <p><span class="header__nguyenlieugiay__text" id="giay">Giấy</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__giay__menu">
+                                <p id="hoahuongduong">Hoa hướng dương</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="quilling">Tranh cuộn Quilling</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__input__menu">
+                <input type="text" class="header__timkiem__input">
+            </div>
+            <div class="header__timkiem__menu">
+                <span><i class="fa fa-search" aria-hidden="true"></i></span>
+            </div>
+        </menu>
+    </header>
+    <section>
+        <h1 class="section__tieude__text" id="tieude">Giấy cuộn Quilling</h1>
+        <p class="section__loidan__text">
+            <i>Khác với Origami thì Quilling (nghệ thuật xoắn giấy, cuốn giấy) là cách sử dụng giấy và dụng cụ hỗ trợ để cuộn tròn và ghép các mảnh giấy cuộn đó thành 1 tác phẩm hoàn chỉnh.
+                Sau đây là cách hướng dẫn để biến những dải giấy đầy màu sắc trở thành tác phẩm đầy bắt mắt</i>
+        </p>
+        <div class="section__noidung__text">
+            <h2>Dụng cụ cần có để làm quilling đơn giản</h2>
+            <p>
+                <h3>* Que cuốn giấy quilling</h3>
+                Để làm quilling giấy xoắn, không thể không có que cuốn giấy - trợ thủ đắc lực giúp bạn có những chiếc quilling đa dạng. Có 2 loại que cuốn bạn có thể chọn lựa: <br>
+                <img src="./Anh/quilling_1.jpg" alt="" class="section__khoangcach__image"> <br>
+                - Que cuốn giấy quilling đầu to: loại này có khe để kẹp giấy xoắn, rất thích hợp cho người mới bắt đầu học làm quilling. Tuy loại này dễ dùng nhưng phần tâm giấy xoắn thường bị to. <br>
+                - Que cuốn giấy quilling đầu kim cực nhỏ: thường sử dụng khi đã thành thạo trong việc làm quilling <br>
+                Hiện nay có rất nhiều loại que cuốn giấy được kết hợp từ cả 2 loại trên, hoặc que quilling bằng điện. Nếu không mua, bạn cũng có thể tự chế cho mình chiếc que cuốn bằng đầu kim khâu cũ, tăm nhọn… <br>
+                <h3>* Giấy xoắn quilling</h3> <br>
+                <img src="./Anh/quilling_2.jpg" alt="" class="section__khoangcach__image"> <br>
+                Là những dải giấy được cắt nhỏ, kích thước khoảng 1cm trở lên được cắt sẵn với nhiều màu sắc khác nhau. Bạn có thể tìm mua ở các cửa hàng lưu niệm rất sẵn có, hoặc tận dụng giấy báo, bìa cũ khi bắt đầu học. <br>
+                <h3>* Keo sữa</h3>
+                Nếu là tín đồ yêu thích làm đồ handmade, hẳn bạn không còn lạ gì với keo sữa. Tuy nhiên, khi sử dụng quilling để làm keo sữa, bạn cần lưu ý như sau: <br>
+                <img src="./Anh/quilling_3.jpg" alt="" class="section__khoangcach__image"> <br>
+                - Không sử dụng quá nhiều keo sữa để dán sẽ khiến giấy bị mềm, ướt và cong <br>
+                - Nếu muốn tránh không lấy quá nhiều keo, bạn nên chọn loại hộp có đầu phun nhỏ, rồi dùng đầu kim tiêm gắn vào ống keo. <br>
+                - Do keo sữa rất dễ khô và vón cục, khi sử dụng nên pha với một chút nước và sau khi sử dụng bạn nên đậy kín để bảo quản. <br>
+                - Keo sữa thường dùng trong công cuộc làm đồ handmade <br>
+                <h3>* Kéo cắt giấy</h3>
+                Để làm quilling, bạn chỉ cần sử dụng kéo mũi nhọn (dùng để bấm hoặc tỉa các chi tiết nhỏ) và kéo răng cưa để tạo viền cho dải giấy. <br>
+                Kéo mũi nhọn dùng để cắt tỉa các chi tiết nhỏ <br>
+                Các dụng cụ khác để học cách làm quilling cơ bản <br>
+                Bộ định vị quilling và khung: giúp bạn dễ dàng làm quilling với kích thước to nhỏ khác nhau
+                Dao trổ <br>
+                Lược quilling, kim định vị <br>
+                Nhíp gắp <br>
+            </p>
+            <h2>Cách làm Quilling cơ bản</h2>
+            <p>
+                Để làm được những sản phẩm quilling phức tạp thì các bạn cần nắm được những bước làm quilling cơ bản nhất. Bắt đầu các bạn cần thực hiện hình xoắn tròn sao cho thật chặt tay là được bởi vì chỉ cần làm được bước này thì chúng ta có thể dễ dàng hơn trong việc biến tấu thành các sản phẩm mới một cách đơn giản nhất. <br>
+                Làm quilling tròn chặt: các bạn cần đặt chiếc que cuốn giấy vào vị trí của đầu dải giấy, tiếp theo dùng một ngón cái cùng với ngón trỏ của mình để có thể bắt đầu thực hiện cuộn những dải giấy ở xung quanh bên ngoài chiếc que. Các bạn cứ tiến hành như vậy cho đến khi nào hết thì sẽ thu được một hình xoắn giấy dạng tròn chặt như thế này. <br>
+                <img src="./Anh/quilling_6.jpg" alt="" class="section__khoangcach__image"> <br>
+                Chỉ cần thay đổi lực của tay để vặn và điều chỉnh độ căng của lõi giấy, những loại cuộn giấy khác nhau đã được tạo ra. Có một số loại cơ bản khác như cuộn lõi chặt, cuộn lõi lỏng, cuộn giọt nước, giọt nước hơi cong một nửa, cong chữ S, cuộn vuông, cuộn hình tim, cuộn mắt.. <br>
+                <img src="./Anh/quilling_5.jpg" alt="" class="section__khoangcach__image"> <br>
+                <b>Một số mẫu mọi người có tham khảo</b> <br>
+                <img src="./Anh/quilling_mau.jpg" alt="" class="section__khoangcachmau__image">
+                <img src="./Anh/quilling_mau_1.jpg" alt="">
+            </p>
+            <p><a href="#tieude">Về đầu trang</a></p>
+    </section>
+    <footer>
+        <div id="footer__noidung__text">
+            <h3 class="footer__tieude__text">Có thể bạn quan tâm</h3>
+            <div class="container_slide_show">
+                <ul id="slide_show">
+                <li id="hoa"><p><i>Hoa hướng dương</i></p><img src="./css/bg_huongduong1.jpg" ></li>
+                <li id="kep"><p><i>Kẹp tóc xinh xắn</i></p><img src="./css/bg_vai.jpg" ></li>
+                </ul>
+            </div>
+            <h3 class="footer__tieude__text">Bình luận</h3>
+            <form name="dataform" class="footer__edit__form">
+                <textarea name="" id="ykien" cols="30" rows="3" class="footer__edit__textarea"></textarea> <br>
+                <p id="yk" onclick="Binhluan()" class="footer__edit__button"><i class="fa fa-comments" aria-hidden="true"></i> Gửi</p>
+            </form>
+            <span id="guiyk" class="footer__gui__text"></span>
+        </div>
+        <div id="footer__lienhe__background">
+            <h3 class="footer__lienhe__text">Thông tin liên hệ</h3>
+            <img src="./Anh/agenda.png" height="20px"> <b class="footer__lienhe__text"> 09xx-xxx-xxx</b> <br> 
+            <img src="./Anh/email.png" height="20px"> <b class="footer__lienhe__text"> mianh.handmade@gmail.com</b> <br> <br>
+            <span><a href="https://www.youtube.com/watch?v=SuzXHUoFON8"><img src="./Anh/youtube.png" class="footer__lienhe__icon"></a></span>
+            <span><a href="https://www.facebook.com/tintucvtv24"><img src="./Anh/facebook.png" class="footer__lienhe__icon"></a></span>
+            <span><a href="https://www.instagram.com/vtv24news/"><img src="./Anh/instagram.png" class="footer__lienhe__icon"></a></span>
+        </div>
+    </footer>
+</body>
+</html>

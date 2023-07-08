@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOA HƯỚNG DƯƠNG</title>
+    <link rel="stylesheet" href="./css/style_hoa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#show__nguyenlieu__menu").hide();
+            $("#header__nguyenlieu__menu").mouseenter(function(){
+                $("#header__nguyenlieu__menu").slideDown(function(){
+                    $("#show__nguyenlieu__menu").show();
+                }),
+                $("#header__nguyenlieu__menu").mouseleave(function(){
+                    $("#show__nguyenlieu__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__go__menu").hide();
+            $("#show__nguyenlieugo__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugo__menu").slideDown(function(){
+                    $("#show__go__menu").show();
+                    $("#go").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#go").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugo__menu").mouseleave(function(){
+                    $("#show__go__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__vai__menu").hide();
+            $("#show__nguyenlieuvai__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieuvai__menu").slideDown(function(){
+                    $("#show__vai__menu").show(),
+                    $("#vai").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#vai").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieuvai__menu").mouseleave(function(){
+                    $("#show__vai__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__giay__menu").hide();
+            $("#show__nguyenlieugiay__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugiay__menu").slideDown(function(){
+                    $("#show__giay__menu").show(),
+                    $("#giay").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#giay").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugiay__menu").mouseleave(function(){
+                    $("#show__giay__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#hoahuongduong").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#hoahuongduong").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#hoahuongduong").click(function()
+            {
+                window.location="hoahuongduong.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#quilling").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#quilling").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#quilling").click(function()
+            {
+                window.location="giaycuon.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#keptoc").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#keptoc").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#keptoc").click(function()
+            {
+                window.location="keptoc.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#lotly").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#lotly").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#lotly").click(function()
+            {
+                window.location="lotly.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#nhago").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#nhago").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#nhago").click(function()
+            {
+                window.location="nhago.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#tuivai").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#tuivai").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#tuivai").click(function()
+            {
+                window.location="tuivai.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#trangchu").click(function()
+            {
+                window.location="trangchu.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#gioithieu").click(function()
+            {
+                window.location="gioithieu.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#giayquilling").click(function()
+            {
+                window.location="giaycuon.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#kep").click(function()
+            {
+                window.location="keptoc.html"
+            })
+        });
+
+        $('#slide_show > li:first').css('display', 'block').addClass('active');
+  var isHoverBtn = false;
+
+  $('#next_slide').bind('click', function() {
+    runSlide(true);
+  });
+
+  $('#prev_slide').bind('click', function() {
+    runSlide(false);
+  });
+
+  $('.slide_btn').hover(function() {
+    isHoverBtn = true;
+  }, function() {
+    isHoverBtn = false;
+  });
+
+  setInterval(function(){
+    if (!isHoverBtn) {
+      runSlide(true);
+    }
+  }, 3000);
+
+
+  function runSlide(isNext) {
+    var oldItem = $('#slide_show > li.active');
+    var newItem;
+  
+    if (isNext) {
+      newItem = oldItem.next();
+
+      if (newItem.length === 0) {
+        newItem = $('#slide_show > li:first');
+      }
+    } else {
+      newItem = oldItem.prev();
+
+      if (newItem.length === 0) {
+        newItem = $('#slide_show > li:last');
+      }
+    }
+
+    if (newItem.length === 0) {
+      newItem = $('#slide_show > li:eq(0)');
+    }
+
+    oldItem.fadeOut(function() {
+      $(this).removeClass('active');
+    });
+
+    newItem.fadeIn(function() {
+        $(this).addClass('active');
+      });
+  };
+  function Binhluan()
+    {
+        var a = document.dataform.ykien.value
+        document.getElementById('guiyk').innerHTML=a
+    }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <menu class="header__thanhcongcu__menu">
+                <div class="header__congcu__menu">
+                    <p id="trangchu"><i class="fa fa-home" aria-hidden="true"></i>Trang chủ</p>
+                </div>
+                <div class="header__congcu2__menu">
+                    <p id="gioithieu">Giới thiệu</p>
+                </div>
+                <div id="header__nguyenlieu__menu">
+                    <p><b>Nguyên liệu</b> <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                    <ul id="show__nguyenlieu__menu">
+                        <li id="show__nguyenlieu__li">
+                            <div id="show__nguyenlieugo__menu">
+                                <p><span class="header__nguyenlieugo__text" id="go">Gỗ</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                                <div id="show__go__menu">
+                                    <p id="lotly">Đồ lót ly</p>
+                                    <hr size="1px" color="darkgrey">
+                                    <p id="nhago">Nhà gỗ</p>
+                                </div>
+                            </div>
+                            <hr size="1px" color="darkgrey">
+                            <div id="show__nguyenlieuvai__menu">
+                                <p><span class="header__nguyenlieuvai__text" id="vai">Vải</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                                <div id="show__vai__menu">
+                                    <p id="tuivai">Túi vải</p>
+                                    <hr size="1px" color="darkgrey">
+                                    <p id="keptoc">Kẹp tóc</p>
+                                </div>
+                            </div>
+                            <hr size="1px" color="darkgrey">
+                            <div id="show__nguyenlieugiay__menu">
+                                <p><span class="header__nguyenlieugiay__text" id="giay">Giấy</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                                <div id="show__giay__menu">
+                                    <p id="hoahuongduong">Hoa hướng dương</p>
+                                    <hr size="1px" color="darkgrey">
+                                    <p id="quilling">Tranh cuộn Quilling</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__input__menu">
+                    <input type="text" class="header__timkiem__input">
+                </div>
+                <div class="header__timkiem__menu">
+                    <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                </div>
+            </menu>
+        </header>
+        <section>
+            <h1 class="section__tieude__text" id="tieude">Làm hoa hướng dương bằng giấy nhúng</h1>
+            <p class="section__loidan__text">
+                <i>Hoa hướng dương tượng trưng cho sự đáng yêu, trung thành và trường thọ. Phần lớn ý nghĩa của hoa hướng dương bắt nguồn từ chính cái tên của nó, chính là mặt trời - một biểu tượng mãnh liệt của sự sống. ... chỉ với vài tờ giấy cùng với một chút sự khéo tay chúng ta có thể tạo ra nhưng bông hoa xinh đẹp. Cùng bắt tay vào làm thôi nào!!!</i>
+            </p>
+            <div class="section__noidung__text">
+                <h2>Một số nguyên liệu để làm 1 bó hoa handmade:</h2>
+                <p>
+                    <ul>
+                        <li>Giấy nhún màu vàng, xanh và nâu</li>
+                        <li>Giấy gói hoa</li>
+                        <li>Băng keo giấy màu xanh</li>
+                        <li>Kéo, kìm</li>
+                        <li>Dây thép</li>
+                        <li>Dây duy băng</li>
+                    </ul>
+                </p>
+                <h2>Quy trình thực hiện trong sáu bước đơn giản</h2>
+                <p class="section__khoangcachtieude__text"><b>Bước 1:</b> Làm thân bông hoa. Chúng ta dùng 1 đoạn dây thép dài khoảng 40 cm để làm cành hoa. Tiếp theo cắt giấy nhún màu xanh thành các đoạn rồi cuốn quanh dây thép.Cùng lúc cuốn quanh dây thép bạn vừa dán keo sữa lên miếng giấy nhé.Cuốn đoạn dây thép đó 3 lần giấy để cành hoa trông to hơn,phù hợp với kích thước của bông hoa.</p>
+                <img src="./Anh/hoa_huong_duong_12.jpg" alt="" class="section__khoangcach__image">
+                <img src="./Anh/hoa_huong_duong_13.jpg" alt="">
+                <p>
+                    <b>Bước 2:</b> Làm nhị hoa bằng giấy nhún màu nâu. Dùng kéo để cắt giấy nhún nâu thành các đoạn giấy dài rồi gấp đôi lại (chiều ngang khoảng 4cm). Tiếp theo các bạn gấp giấy nhún lại làm 4 và dùng kéo cắt các đường nhỏ.Đường cắt bằng một nửa thôi bạn nhé.
+                </p>
+                    <img src="./Anh/hoa_huong_duong_14.jpg" alt="" class="section__khoangcach__image">
+                    <img src="./Anh/hoa_huong_duong_15.jpg" alt="">
+                <p>
+                    Sau khi đã hoàn thành cắt đoạn giấy đang làm xong, bạn tiếp tục cắt thành 4 đoạn giấy tương tự như vậy. Rồi cuốn quanh ầu của cành cây, vừa cuốn dán keo vào để cho chúng bám chặt vào nhau nhé.
+                </p>
+                    <img src="./Anh/hoa_huong_duong_16.jpg" alt="" class="section__khoangcach__image">
+                    <img src="./Anh/hoa_huong_duong_17.jpg" alt="">
+                <p>
+                    <b>Bước 3:</b> Làm cánh hoa hướng dương bằng giấy nhún màu vàng. Bạn sử dụng một đoạn giấy nhún màu vàng bản to khoảng 8 cm rồi gấp lại. Dùng kéo cắt tạo hình cánh hoa mảnh.
+                </p>
+                    <img src="./Anh/hoa_huong_duong_18.jpg" alt="" class="section__khoangcach__image">
+                    <img src="./Anh/hoa_huong_duong_19.jpg" alt="">
+                <p>
+                    Sau đó, mở phần giấy vừa cắt rồi dùng kéo miết tạo đường cong tự nhiên cho cánh hoa. Rồi bạn cuốn quanh phần nhị hoa vừa làm, vừa cuốn bạn vừa dán keo lên cánh hoa. Bạn cuốn 2 đoạn cánh hoa vàng để làm nhị nhé!
+                </p>
+                    <img src="./Anh/hoa_huong_duong_20.jpg" alt="" class="section__khoangcach__image">
+                    <img src="./Anh/hoa_huong_duong_21.jpg" alt="">
+                <p>
+                    <b>Bước 4:</b> Làm dài hoa bằng giấy nhún xanh lá cây. Tương tự với cach làm cánh hoa. Bạn dùng đoạn giấy nhún màu xanh lá gấp vào rồi cắt tỉa nhọn như cánh hoa. Dùng để miết giấy nhún và vặn nhỏ đầu nhọn của đài hoa.
+                </p>
+                <img src="./Anh/hoa_huong_duong_1.jpg" alt="" class="section__khoangcach__image">
+                <img src="./Anh/hoa_huong_duong_2.jpg" alt="">
+                <p>
+                    Khi đã làm xong đài hoa. Chúng ta tiến hành cuốn quanh che đi phần chân của cánh hoa. Cuốn xong, chụm lại ở đáy và dùng băng keo giấy màu xanh để dán vào. Bạn dán từ đó và cuốn hết cành hoa.
+                </p>
+                <img src="./Anh/hoa_huong_duong_3.jpg" alt="" class="section__khoangcach__image">
+                <img src="./Anh/hoa_huong_duong_4.jpg" alt="">
+                <p>
+                    <b>Bước 5:</b> Làm lá của cành hoa từ giấy nhún màu xanh. Dán băng dính 2 mặt vào một nửa tờ giấy nhún đã cắt. Sau đó đặt một đoạn dây thép lên đó.Tiếp đến gập tờ giấy đó lại để 2 nửa dính vào nhau.
+                </p>
+                <img src="./Anh/hoa_huong_duong_5.jpg" alt="" class="section__khoangcach__image">
+                <img src="./Anh/hoa_huong_duong_6.jpg" alt="">
+                <p>
+                    Rồi gấp tiếp để dùng kéo cắt tạo hình cho chiếc lá. Cắt xong gắn chiếc lá với thân bằng băng keo giấy nhé.
+                </p>
+                <img src="./Anh/hoa_huong_duong_7.jpg" alt="" class="section__khoangcach__image">
+                <img src="./Anh/hoa_huong_duong_8.jpg" alt="">
+                <p>
+                    <b>Bước 6:</b> Hoàn thành những bó hoa đã làm trước đó. Khi bạn đã là xong khoảng tầm 6-10 bông. Tùy vào số lượng mà bạn mong muốn. Chuẩn bị băng keo giấy để bo tròn quấn các bông hoa vào với nhau.  Rồi dùng giấy bó hoa hoặc giấy báo cũng được để bao bo bọc bên ngoài.
+                </p>
+                <img src="./Anh/hoa_huong_duong_9.jpg" alt="" class="section__khoangcach__image">
+                <img src="./Anh/hoa_huong_duong_10.jpg" alt="">
+                <p>
+                    Buộc dây ruy băng tạo thành nơ cho bó hoa trông xinh xắn hơn nhé!
+                    Vậy là chúng ta đã hoàn thành xong bó hoa hướng dương handmade rất đơn giản và ý nghĩa phải không nào? Bạn có thể dùng để trang trí hoặc tặng cho những người thân yêu của mình. Những bông hoa tươi tắn xinh đẹp này có thể giúp bạn gửi đến thông điệp “Hoa hướng dương luôn vươn mình theo hướng mặt trời có lẽ vì thế hoa hướng dương luôn mang màu vàng của nắng ấm để thắp sáng lên cuộc sống”
+                </p>
+                <img src="./Anh/hoa_huong_duong_mau.jpg" alt="" class="section__khoangcachmau__image">
+                <p><a href="#tieude">Về đầu trang</a></p>
+            </div>
+        </section>
+        <footer>
+            <div id="footer__noidung__text">
+                <h3 class="footer__tieude__text">Có thể bạn quan tâm</h3>
+                <div class="container_slide_show">
+                    <ul id="slide_show">
+                        <li id="giayquilling"><p><i>Giấy cuộn quilling</i></p><img src="./css/bg_giay.jpg" ></li>
+                        <li id="kep"><p><i>Kẹp tóc xinh xắn</i></p><img src="./css/bg_vai.jpg" ></li>
+                    </ul>
+                </div>
+                <h3 class="footer__tieude__text">Bình luận</h3>
+                <form name="dataform" class="footer__edit__form">
+                    <textarea name="" id="ykien" cols="30" rows="3" class="footer__edit__textarea"></textarea> <br>
+                    <p id="yk" onclick="Binhluan()" class="footer__edit__button"><i class="fa fa-comments" aria-hidden="true"></i> Gửi</p>
+                </form>
+                    <span id="guiyk" class="footer__gui__text"></span>
+            </div>
+            <div id="footer__lienhe__background">
+                <h3 class="footer__lienhe__text">Thông tin liên hệ</h3>
+                <img src="./Anh/agenda.png" height="20px"> <b class="footer__lienhe__text"> 09xx-xxx-xxx</b> <br> 
+                <img src="./Anh/email.png" height="20px"> <b class="footer__lienhe__text"> mianh.handmade@gmail.com</b> <br> <br>
+                <span><a href="https://www.youtube.com/watch?v=SuzXHUoFON8"><img src="./Anh/youtube.png" class="footer__lienhe__icon"></a></span>
+                <span><a href="https://www.facebook.com/tintucvtv24"><img src="./Anh/facebook.png" class="footer__lienhe__icon"></a></span>
+                <span><a href="https://www.instagram.com/vtv24news/"><img src="./Anh/instagram.png" class="footer__lienhe__icon"></a></span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

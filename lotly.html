@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GỖ - LÓT LY</title>
+    <link rel="stylesheet" href="css/style_lotly.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        function Binhluan()
+        {
+            var a = document.dataform.ykien.value
+            document.getElementById('guiyk').innerHTML=a
+        };
+        $(document).ready(function(){
+            $("#show__nguyenlieu__menu").hide();
+            $("#header__nguyenlieu__menu").mouseenter(function(){
+                $("#header__nguyenlieu__menu").slideDown(function(){
+                    $("#show__nguyenlieu__menu").show();
+                }),
+                $("#header__nguyenlieu__menu").mouseleave(function(){
+                    $("#show__nguyenlieu__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__go__menu").hide();
+            $("#show__nguyenlieugo__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugo__menu").slideDown(function(){
+                    $("#show__go__menu").show();
+                    $("#go").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#go").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugo__menu").mouseleave(function(){
+                    $("#show__go__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__vai__menu").hide();
+            $("#show__nguyenlieuvai__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieuvai__menu").slideDown(function(){
+                    $("#show__vai__menu").show(),
+                    $("#vai").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#vai").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieuvai__menu").mouseleave(function(){
+                    $("#show__vai__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__giay__menu").hide();
+            $("#show__nguyenlieugiay__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugiay__menu").slideDown(function(){
+                    $("#show__giay__menu").show(),
+                    $("#giay").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#giay").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugiay__menu").mouseleave(function(){
+                    $("#show__giay__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#hoahuongduong").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#hoahuongduong").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#hoahuongduong").click(function()
+            {
+                window.location="hoahuongduong.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#quilling").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#quilling").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#quilling").click(function()
+            {
+                window.location="giaycuon.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#keptoc").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#keptoc").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#keptoc").click(function()
+            {
+                window.location="keptoc.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#lotly").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#lotly").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#lotly").click(function()
+            {
+                window.location="lotly.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#nhago").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#nhago").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#nhago").click(function()
+            {
+                window.location="nhago.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#tuivai").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#tuivai").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#tuivai").click(function()
+            {
+                window.location="tuivai.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#trangchu").click(function()
+            {
+                window.location="trangchu.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#gioithieu").click(function()
+            {
+                window.location="gioithieu.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#giayquilling").click(function()
+            {
+                window.location="giaycuon.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#kep").click(function()
+            {
+                window.location="keptoc.html"
+            })
+        });
+
+        $('#slide_show > li:first').css('display', 'block').addClass('active');
+  var isHoverBtn = false;
+
+  $('#next_slide').bind('click', function() {
+    runSlide(true);
+  });
+
+  $('#prev_slide').bind('click', function() {
+    runSlide(false);
+  });
+
+  $('.slide_btn').hover(function() {
+    isHoverBtn = true;
+  }, function() {
+    isHoverBtn = false;
+  });
+
+  setInterval(function(){
+    if (!isHoverBtn) {
+      runSlide(true);
+    }
+  }, 3000);
+
+
+  function runSlide(isNext) {
+    var oldItem = $('#slide_show > li.active');
+    var newItem;
+  
+    if (isNext) {
+      newItem = oldItem.next();
+
+      if (newItem.length === 0) {
+        newItem = $('#slide_show > li:first');
+      }
+    } else {
+      newItem = oldItem.prev();
+
+      if (newItem.length === 0) {
+        newItem = $('#slide_show > li:last');
+      }
+    }
+
+    if (newItem.length === 0) {
+      newItem = $('#slide_show > li:eq(0)');
+    }
+
+    oldItem.fadeOut(function() {
+      $(this).removeClass('active');
+    });
+
+    newItem.fadeIn(function() {
+        $(this).addClass('active');
+      });
+  }
+    </script>
+</head>
+<body>
+    <header>
+        <menu class="header__thanhcongcu__menu">
+            <div class="header__logo__image">
+                <img src="./Anh/logo.png" alt="" height="50px">
+            </div>
+            <div class="header__congcu__menu">
+                <p id="trangchu"><i class="fa fa-home" aria-hidden="true"></i>Trang chủ</p>
+            </div>
+            <div class="header__congcu2__menu">
+                <p id="gioithieu">Giới thiệu</p>
+            </div>
+            <div id="header__nguyenlieu__menu">
+                <p><b>Nguyên liệu</b> <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                <ul id="show__nguyenlieu__menu">
+                    <li id="show__nguyenlieu__li">
+                        <div id="show__nguyenlieugo__menu">
+                            <p><span class="header__nguyenlieugo__text" id="go">Gỗ</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__go__menu">
+                                <p id="lotly">Đồ lót ly</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="nhago">Nhà gỗ</p>
+                            </div>
+                        </div>
+                        <hr size="1px" color="darkgrey">
+                        <div id="show__nguyenlieuvai__menu">
+                            <p><span class="header__nguyenlieuvai__text" id="vai">Vải</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__vai__menu">
+                                <p id="tuivai">Túi vải</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="keptoc">Kẹp tóc</p>
+                            </div>
+                        </div>
+                        <hr size="1px" color="darkgrey">
+                        <div id="show__nguyenlieugiay__menu">
+                            <p><span class="header__nguyenlieugiay__text" id="giay">Giấy</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__giay__menu">
+                                <p id="hoahuongduong">Hoa hướng dương</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="quilling">Tranh cuộn Quilling</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__input__menu">
+                <input type="text" class="header__timkiem__input">
+            </div>
+            <div class="header__timkiem__menu">
+                <span><i class="fa fa-search" aria-hidden="true"></i></span>
+            </div>
+        </menu>
+    </header>
+    <div class="container__background">
+        <div class="header__background" style="background-image:url(./Anh/1_10.jpg) ;">
+        <h1 class="header__title" id="tieude">Hướng dẫn cách làm đồ lót ly tô sơn bằng gỗ</h1>
+        <p class="header__subtext"> Những chiếc lót ly bằng gỗ xinh xắn có thể trở 
+            thành món quà thật thú vị để bạn đem tặng gia đình và bạn bè </p>
+        </div>
+        <div class="container__text">
+        <p> Chúng ta hãy bắt tay vào làm những chiếc lót ly theo từng bước một nhé.</p>
+        <img src="./Anh/1_1.jpg" alt="" class="container__image-small">
+        <img src="./Anh/1_2.jpg" alt="" class="container__image-smaller">
+        <h2> Nguyên vật liệu cần thiết</h2>
+        <ul> 
+            <li> Những tấm gỗ ép hoặc miếng gỗ thô </li> 
+            <li> Máy cưa nếu bạn tự cắt gỗ </li>
+            <li> Băng dính trong vẽ tranh </li>
+            <li> Bút chì, bút màu hoặc màu nước </li>
+            <li> Giấy nhám </li>
+            <li> Sơn màu tùy thích </li>
+            <li> Tô, chén nhỏ để đựng sơn </li>
+            <li> Kéo </li>
+            <li> Bảng ghim gỗ bần </li>
+            <li> Kẹp treo </li>
+        </ul>
+        <h2> Quy trình thực hiện</h2>
+        <ul>
+        <p> <b> Bước 1: </b> Dùng bút chì vẽ canh hình dạng và kích thước tùy ý trên mặt gỗ, 
+            cắt gỗ ra thành những miếng nhỏ có kích thước tương ứng.</p>
+            <img src="./Anh/1_5.jpg" alt="" class="container__image">
+            <p> <b> Bước 2: </b> Dùng giấy nhám mài lại góc cạnh và bề mặt gỗ những chỗ xước 
+            hay không bằng phẳng.</p>
+        <p> <b> Bước 3: </b> Dùng băng dính để dán vào miếng gỗ.</p>
+            <img src="./Anh/1_4.jpg" alt="" class="container__image">
+        <p> <b> Bước 4: </b> Nhúng miếng gỗ vào phần sơn màu đến khi phần gỗ dưới băng dính 
+            được che phủ hoàn toàn, khi nhấc ra gõ nhẹ vào thành tô để lấy 
+            bớt phần sơn thừa ra và không còn những bọt khí.</p>
+            <img src="./Anh/1_9.jpg" alt="" class="container__image">
+        <p> <b> Bước 5: </b> Dùng kẹp để treo những miếng gỗ lên và phơi khô, thấm hết 
+            những phần sơn nhỏ giọt để miếng lót ly có thể tròn trĩnh và đẹp hơn. </p>
+            <img src="./Anh/1_7.jpg" alt="" class="container__image">
+        <p> <b> Bước 6: </b> Đến khi sơn khô đến khi có thể chạm vào thì lột phần băng dính ra.</p>
+            <img src="./Anh/1_8.jpg" alt="" class="container__image">
+        <p> <b> Bước 7: </b> Có thể lặp lại những bước trên nhiều lần để có màu sắc và họa 
+            tiết yêu thích. Sau đó, phơi khô khoảng 1 ngày để màu sơn khô hoàn toàn. 
+            Có thể sáng tạo và vẽ trang trí thêm để miếng lót ly thêm màu sắc.</p>
+        <p> <b> Bước 8: </b> Cắt phần bảng ghim bằng với kích thước miếng gỗ và 
+            dán vào mặt dưới miếng gỗ.</p>
+            <img src="./Anh/1_6.jpg" alt="" class="container__image">
+        <p> Vậy là bạn đã hoàn thành một món đồ đẹp mắt và rất hữu dụng rồi. 
+            Đây là cách decor phòng vừa đơn giản, vừa tiết kiệm mà còn vô cùng đẹp mắt.</p>
+            <img src="./Anh/1_3.jpg" alt="" class="container__image">
+        </ul>
+        <p><a href="#tieude">Về đầu trang</a></p>
+        </div>
+    </div>
+    <footer>
+        <div id="footer__noidung__text">
+            <h3 class="footer__tieude__text">Có thể bạn quan tâm</h3>
+            <div class="container_slide_show">
+                <ul id="slide_show">
+                  <li id="giayquilling"><p><i>Giấy cuộn quilling</i></p><img src="./css/bg_giay.jpg" ></li>
+                  <li id="kep"><p><i>Kẹp tóc xinh xắn</i></p><img src="./css/bg_vai.jpg" ></li>
+                </ul>
+            </div>
+            <h3 class="footer__tieude__text">Bình luận</h3>
+            <form name="dataform" class="footer__edit__form">
+                <textarea name="" id="ykien" cols="30" rows="3" class="footer__edit__textarea"></textarea> <br>
+                <p id="yk" onclick="Binhluan()" class="footer__edit__button"><i class="fa fa-comments" aria-hidden="true"></i> Gửi</p>
+            </form>
+            <span id="guiyk" class="footer__gui__text"></span>
+        </div>
+        <div id="footer__lienhe__background">
+            <h3 class="footer__lienhe__text">Thông tin liên hệ</h3>
+            <img src="./Anh/agenda.png" height="20px"> <b class="footer__lienhe__text"> 09xx-xxx-xxx</b> <br> 
+            <img src="./Anh/email.png" height="20px"> <b class="footer__lienhe__text"> mianh.handmade@gmail.com</b> <br> <br>
+            <span><a href="https://www.youtube.com/watch?v=SuzXHUoFON8"><img src="./Anh/youtube.png" class="footer__lienhe__icon"></a></span>
+            <span><a href="https://www.facebook.com/tintucvtv24"><img src="./Anh/facebook.png" class="footer__lienhe__icon"></a></span>
+            <span><a href="https://www.instagram.com/vtv24news/"><img src="./Anh/instagram.png" class="footer__lienhe__icon"></a></span>
+        </div>
+    </footer>
+</body>
+</html>

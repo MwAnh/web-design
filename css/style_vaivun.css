@@ -1,0 +1,298 @@
+*
+{
+    margin: auto;
+    padding: 0 auto;
+}
+.header__timkiem__input
+{
+    width: 150px;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+header
+{
+    width: auto;
+    min-height: 80px;
+    margin: auto;
+}
+.header__logo__image
+{
+    cursor: pointer;
+    width: 130px;
+    float: left;
+    margin: 12px 0px 0px 10px;
+}
+.header__thanhcongcu__menu
+{
+    color: white;
+    height: 80px;
+    width: auto;
+    background-color: #C73866;
+    font-size: 18px;
+}
+.header__congcu__menu
+{
+    cursor: pointer;
+    width: 130px;
+    float: left;
+    margin: 26px 0px 0px 650px;
+    font-weight: bold;
+}
+#header__nguyenlieu__menu
+{
+    
+    cursor: pointer;
+    width: 120px;
+    float: left;
+    margin: 26px 0px 0px 20px;
+}
+.header__input__menu
+{
+    cursor: pointer;
+    width: 150px;
+    float: left;
+    margin: 26px 0px 0px 20px;
+}
+.header__timkiem__menu
+{
+    cursor: pointer;
+    width: 20px;
+    float: left;
+    margin: 30px 0px 0px 10px;
+}
+.header__congcu2__menu
+{
+    cursor: pointer;
+    width: 110px;
+    float: left;
+    margin: 26px 0px 0px 20px;
+    font-weight: bold;
+}
+#show__nguyenlieu__menu
+{
+    width: 120px;
+    float: left;
+    margin: 33px 0px 0px -45px;
+}
+#show__nguyenlieu__li
+{
+    color: #120C6E;
+    padding:0px 10px 0px 10px;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 0px 0px 5px 5px;
+}
+#show__nguyenlieugo__menu
+{
+    width: 130px;
+    height: 35px;
+    padding-top: 10px;
+}
+#show__go__menu
+{
+    width: 120px;
+    height: 80px;
+    background-color: white;
+    margin: -41px 0px 10px 120px;
+    padding: 10px;
+    box-shadow:rgb(111, 188, 255) 1px 1px 25px;
+    line-height: 40px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 5px;
+}
+#show__nguyenlieuvai__menu
+{
+    width: 130px;
+    height: 35px;
+    padding-top: 10px;
+}
+#show__nguyenlieugiay__menu
+{
+    width: 130px;
+    height: 35px;
+    padding-top: 10px;
+}
+#show__vai__menu
+{
+    width: 120px;
+    height: 80px;
+    background-color: white;
+    margin: -41px 0px 10px 120px;
+    padding: 10px;
+    box-shadow:rgb(111, 188, 255) 1px 1px 25px;
+    line-height: 40px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 5px;
+}
+#show__giay__menu
+{
+    width: 160px;
+    height: 80px;
+    background-color: white;
+    margin: -41px 0px 10px 120px;
+    padding: 10px;
+    box-shadow:rgb(111, 188, 255) 1px 1px 25px;
+    line-height: 40px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 5px;
+}
+.header__nguyenlieugo__text
+{
+    padding-right: 84px;
+}
+.header__nguyenlieuvai__text
+{
+    padding-right: 80px;
+}
+.header__nguyenlieugiay__text
+{
+    padding-right: 70px;
+}
+body {
+    background-color:lavenderblush;
+}
+
+.header__background {
+    height: 400px;
+    font-family: 'Dancing Script', cursive;    
+    color: black;
+    background-size: 1280px 400px;
+}
+.header__title {
+    text-align: center;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 80px;
+    line-height: 50px;
+    text-shadow: white 1px 1px 10px;
+}
+.header__subtext {
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    padding: 40px;
+    text-shadow: white 1px 1px 10px;
+}   
+
+.container__background {
+    width: 1280px;
+    background-color: white;
+    font-size: 18px;
+    line-height: 30px; 
+    box-shadow:rgb(255, 130, 172) 1px 1px 25px;
+}
+.container__image {
+    padding: 30px;
+    margin-left: 250px;
+    width: 500px;
+}
+.container__image-smaller {
+    padding: 30px;
+    height: 250px;
+}
+.container__image-small {
+    padding: 55px;
+    height: 250px;
+    margin-left: 150px;
+}
+.container__text {
+    padding: 50px;
+}
+.footer__edit__button
+{
+    width: 75px;
+    background-color: rgb(100, 100, 149);
+    color: white;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-left: 0px;
+    padding-left: 10px;
+}
+footer
+{
+    width: 1280px;
+    background-color: #6F89A2;
+    color: #BEF2A5;
+    height: 370px;
+}
+.footer__tieude__text
+{
+    padding-left: 30px;
+}
+.footer__edit__textarea
+{
+    width: 400px;
+    border-radius: 5px;
+}
+.footer__edit__form
+{
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+.footer__gui__text
+{
+    margin-left: 30px ;
+    background-color: white;
+    color: black;
+    width: 400px;
+}
+#slide_show {
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  #slide_show > li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  #slide_show > li > img {
+    list-style: none;
+    width: 400px;
+  }
+  .container_slide_show {
+    width: 400px;
+    margin-left: 30px ;
+    padding: 0px 0px 10px 20px;
+  }
+  .container_button {
+    margin-top: 5px;
+  }
+  .slide_btn {
+    width: 50px;
+    height: 30px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  #footer__lienhe__background {
+    float: left;
+    width: 450px;
+    margin-left: 400px ;
+    text-align: justify;
+}
+.footer__lienhe__text {
+    margin: 10px;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: #F9E07F 0px 0px 10px;
+}
+.footer__lienhe__icon {
+    padding: 5px;
+    height: 30px;
+}
+#footer__noidung__text
+  {
+      float: left;
+      width: 400px;
+  }

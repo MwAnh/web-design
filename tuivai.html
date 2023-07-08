@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VẢI - ĐỒ HANDMADE VẢI VỤN</title>
+    <link rel="stylesheet" href="./css/style_vaivun.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        function Binhluan()
+        {
+            var a = document.dataform.ykien.value
+            document.getElementById('guiyk').innerHTML=a
+        };
+        $(document).ready(function(){
+            $("#show__nguyenlieu__menu").hide();
+            $("#header__nguyenlieu__menu").mouseenter(function(){
+                $("#header__nguyenlieu__menu").slideDown(function(){
+                    $("#show__nguyenlieu__menu").show();
+                }),
+                $("#header__nguyenlieu__menu").mouseleave(function(){
+                    $("#show__nguyenlieu__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__go__menu").hide();
+            $("#show__nguyenlieugo__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugo__menu").slideDown(function(){
+                    $("#show__go__menu").show();
+                    $("#go").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#go").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugo__menu").mouseleave(function(){
+                    $("#show__go__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__vai__menu").hide();
+            $("#show__nguyenlieuvai__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieuvai__menu").slideDown(function(){
+                    $("#show__vai__menu").show(),
+                    $("#vai").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#vai").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieuvai__menu").mouseleave(function(){
+                    $("#show__vai__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__giay__menu").hide();
+            $("#show__nguyenlieugiay__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugiay__menu").slideDown(function(){
+                    $("#show__giay__menu").show(),
+                    $("#giay").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#giay").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugiay__menu").mouseleave(function(){
+                    $("#show__giay__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#hoahuongduong").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#hoahuongduong").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#hoahuongduong").click(function()
+            {
+                window.location="hoahuongduong.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#quilling").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#quilling").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#quilling").click(function()
+            {
+                window.location="giaycuon.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#keptoc").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#keptoc").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#keptoc").click(function()
+            {
+                window.location="keptoc.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#lotly").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#lotly").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#lotly").click(function()
+            {
+                window.location="lotly.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#nhago").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#nhago").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#nhago").click(function()
+            {
+                window.location="nhago.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#tuivai").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#tuivai").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#tuivai").click(function()
+            {
+                window.location="tuivai.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#trangchu").click(function()
+            {
+                window.location="trangchu.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#gioithieu").click(function()
+            {
+                window.location="gioithieu.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#giayquilling").click(function()
+            {
+                window.location="giaycuon.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#kep").click(function()
+            {
+                window.location="keptoc.html"
+            })
+        });
+
+        $('#slide_show > li:first').css('display', 'block').addClass('active');
+  var isHoverBtn = false;
+
+  $('#next_slide').bind('click', function() {
+    runSlide(true);
+  });
+
+  $('#prev_slide').bind('click', function() {
+    runSlide(false);
+  });
+
+  $('.slide_btn').hover(function() {
+    isHoverBtn = true;
+  }, function() {
+    isHoverBtn = false;
+  });
+
+  setInterval(function(){
+    if (!isHoverBtn) {
+      runSlide(true);
+    }
+  }, 3000);
+
+
+  function runSlide(isNext) {
+    var oldItem = $('#slide_show > li.active');
+    var newItem;
+  
+    if (isNext) {
+      newItem = oldItem.next();
+
+      if (newItem.length === 0) {
+        newItem = $('#slide_show > li:first');
+      }
+    } else {
+      newItem = oldItem.prev();
+
+      if (newItem.length === 0) {
+        newItem = $('#slide_show > li:last');
+      }
+    }
+
+    if (newItem.length === 0) {
+      newItem = $('#slide_show > li:eq(0)');
+    }
+
+    oldItem.fadeOut(function() {
+      $(this).removeClass('active');
+    });
+
+    newItem.fadeIn(function() {
+        $(this).addClass('active');
+      });
+  }
+    </script>
+</head>
+<body>
+    <header>
+        <menu class="header__thanhcongcu__menu">
+            <div class="header__logo__image">
+                <img src="./Anh/logo.png" alt="" height="50px">
+            </div>
+            <div class="header__congcu__menu">
+                <p id="trangchu"><i class="fa fa-home" aria-hidden="true"></i>Trang chủ</p>
+            </div>
+            <div class="header__congcu2__menu">
+                <p id="gioithieu">Giới thiệu</p>
+            </div>
+            <div id="header__nguyenlieu__menu">
+                <p><b>Nguyên liệu</b> <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                <ul id="show__nguyenlieu__menu">
+                    <li id="show__nguyenlieu__li">
+                        <div id="show__nguyenlieugo__menu">
+                            <p><span class="header__nguyenlieugo__text" id="go">Gỗ</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__go__menu">
+                                <p id="lotly">Đồ lót ly</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="nhago">Nhà gỗ</p>
+                            </div>
+                        </div>
+                        <hr size="1px" color="darkgrey">
+                        <div id="show__nguyenlieuvai__menu">
+                            <p><span class="header__nguyenlieuvai__text" id="vai">Vải</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__vai__menu">
+                                <p id="tuivai">Túi vải</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="keptoc">Kẹp tóc</p>
+                            </div>
+                        </div>
+                        <hr size="1px" color="darkgrey">
+                        <div id="show__nguyenlieugiay__menu">
+                            <p><span class="header__nguyenlieugiay__text" id="giay">Giấy</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__giay__menu">
+                                <p id="hoahuongduong">Hoa hướng dương</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="quilling">Tranh cuộn Quilling</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__input__menu">
+                <input type="text" class="header__timkiem__input">
+            </div>
+            <div class="header__timkiem__menu">
+                <span><i class="fa fa-search" aria-hidden="true"></i></span>
+            </div>
+        </menu>
+    </header>
+    <div class="container__background">
+    <div class="header__background" style="background-image:url(./Anh/3_7.jpg) ;">
+        <h1 class="header__title" id="tieude">Hướng dẫn cách làm đồ handmade bằng vải vụn trang trí độc đáo</h1>
+        <p class="header__subtext"> Đã bao giờ bạn có ý tưởng làm đồ handmade bằng vải vụn chưa? Nếu chưa thì hãy cùng 
+            bắt tay vào thực hiện ngay hôm nay nhé, chắc chắn bạn sẽ vô cùng với 
+            những món đồ vừa đẹp, bảo vệ môi trường lại độc đáo “có 1-0-2" này cho xem. </p>
+    </div>
+    <div class="container__text">
+        <h2> Cách xử lý vải vụn </h2>
+        <ul>
+            <li> Để làm đồ handmade bằng vải vụn thì trước hết bạn cần tiến hành xử lý nguyên vật liệu 
+                trước đã nhé. Vậy vải vụn được lấy từ đâu? Bạn có thể tận dụng những mảnh vải thừa và 
+                dùng kéo cắt vụn nhỏ nhất. Hoặc có thể lấy quần áo cũ và cắt thành vải vụn.</li>
+            <li>Ngoài ra, nếu bạn có nhu cầu sử dụng vải vụn với số lượng lớn, cách tốt nhất là hãy 
+                liên hệ với một tiệm may nào đó nhé. Chắc chắn bạn sẽ xin hoặc mua lại với giá rẻ rất 
+                nhiều loại vải vụn đẹp khác nhau và thỏa sức sáng tạo.</li>
+        </ul>
+        <img src="./Anh/3_2.jpg" alt="" class="container__image-small">
+        <img src="./Anh/3_1.jpg" alt="" class="container__image-small">
+        <h2> Làm túi đựng đồ từ vải vụn</h2>
+        <p> Các bạn cần chuẩn bị một số nguyên liệu sau nhé </p>
+        <ul>
+        <li> Vải vụn </li>
+        <li> Kim chỉ </li>
+        <li> Kéo </li>
+        <li> Bút chì và thước kẻ </li>
+        </ul>
+        <h2> Các bước thực hiện </h2>
+        <p> <b> Bước 1: </b> Đầu tiên bạn sử dụng những mảnh vải vụn may lại với nhau theo sở thích và màu sắc 
+            phù hợp. Sau khi mảnh vải lớn có kích thước bằng độ lớn túi cái bạn mong muốn, 
+            các bạn tỉa lại viền mảnh vải cho thẳng thóm. Làm giống vậy thêm 1 lần nữa. </p>
+            <img src="./Anh/3_8.jpg" alt="" class="container__image">
+            <p> <b> Bước 2: </b> Tiếp theo, bạn lấy hai mảnh vải vừa rồi, hãy kiểm tra 2 mảnh vải kích thước bằng nhau 
+            và gấp đôi lại theo mặt ngược ra ngoài. Sau đó may theo đường viền cho thành hình túi. </p>
+        <p> <b> Bước 3: </b> Lồng 2 mặt của túi lại với nhau và tiếp tục may thêm một lần nữa. Lưu ý, với phần miệng túi 
+            bạn nên để khoảng trống làm dây rút. Có thể may thêm 1 cúc áo tại dây rút để cài vào hoặc may thêm 
+            dây đeo bằng cách may vải vụn lại như bước 1.</p>
+            <img src="./Anh/3_4.jpg" alt="" class="container__image-small">
+            <img src="./Anh/3_5.jpg" alt="" class="container__image-smaller">
+            <img src="./Anh/3_6.jpg" alt="" class="container__image-smaller">
+            <p> Như vậy là bạn đã hoàn thành xong chiếc túi đựng đồ cực đơn giản và đẹp từ vải vụn rồi đó. </p>
+        <h2> Cách làm thảm lau chân bằng vải vụn </h2>    
+            <img src="./Anh/4_3.jpg" alt="" class="container__image-small">
+            <img src="./Anh/4_5.jpg" alt="" class="container__image-smaller">
+            <img src="./Anh/4_4.jpg" alt="" class="container__image-smaller">
+        <p> Các bạn cần chuẩn bị một số nguyên liệu sau nhé </p>
+        <ul>
+            <li> Vải vụn </li>
+            <li> Vải cotton hoặc vải thun cắt thằng từng dây </li>
+            <li> Dây thừng có lõi bấc </li>
+            <li> Kéo </li>
+            <li> Kim chỉ và máy khâu </li>
+        <h2> Các bước thực hiện </h2>
+        <p> <b> Bước 1: </b> Đầu tiên bạn cắt vải vụn thành từng sợi nhỏ khoảng 3cm. </p>
+        <img src="./Anh/4_7.jpg" alt="" class="container__image">
+        <p> <b> Bước 2: </b> Bện vải bằng cách dùng 3 dây vải bện sam như bện tóc vậy. </p>
+        <img src="./Anh/4_6.jpg" alt="" class="container__image">
+        <p> <b> Bước 3: </b> Tiến hành nối vải lại với nhau và xỏ đầu còn lại với dây nối.</p>
+        <img src="./Anh/4_1.jpg" alt="" class="container__image">
+        <p> <b> Bước 4: </b> Phối màu theo ý thích. </p>
+        <p> <b> Bước 5: </b> Kết thành tấm thảm đẹp và rực rỡ sắc màu. </p>
+        <img src="./Anh/4_2.jpg" alt="" class="container__image">
+        <p> Việc tái chế vải vụn, tận dụng quần áo cũ không mặc nữa để làm thành những món đồ mới có giá trị sử dụng 
+            là một cách hữu ích và có ý nghĩa rất lớn tới công cuộc bảo vệ môi trường. Nếu nhà bạn cũng đang có vải thừa 
+            hay quần áo cũ không biết làm thế nào để xử lí thì với những gợi ý trên đây, hy vọng bạn đã có thể 
+            có thêm ý tưởng để tái chế và tận dụng nó nha.</p>
+            <p><a href="#tieude">Về đầu trang</a></p>
+        </div>
+    </div>
+    <footer>
+        <div id="footer__noidung__text">
+            <h3 class="footer__tieude__text">Có thể bạn quan tâm</h3>
+            <div class="container_slide_show">
+                <ul id="slide_show">
+                <li id="giayquilling"><p><i>Giấy cuộn quilling</i></p><img src="./css/bg_giay.jpg" ></li>
+                <li id="kep"><p><i>Kẹp tóc xinh xắn</i></p><img src="./css/bg_vai.jpg" ></li>
+                </ul>
+            </div>
+            <h3 class="footer__tieude__text">Bình luận</h3>
+            <form name="dataform" class="footer__edit__form">
+                <textarea name="" id="ykien" cols="30" rows="3" class="footer__edit__textarea"></textarea> <br>
+                <p id="yk" onclick="Binhluan()" class="footer__edit__button"><i class="fa fa-comments" aria-hidden="true"></i> Gửi</p>
+            </form>
+            <span id="guiyk" class="footer__gui__text"></span>
+        </div>
+        <div id="footer__lienhe__background">
+            <h3 class="footer__lienhe__text">Thông tin liên hệ</h3>
+            <img src="./Anh/agenda.png" height="20px"> <b class="footer__lienhe__text"> 09xx-xxx-xxx</b> <br> 
+            <img src="./Anh/email.png" height="20px"> <b class="footer__lienhe__text"> mianh.handmade@gmail.com</b> <br> <br>
+            <span><a href="https://www.youtube.com/watch?v=SuzXHUoFON8"><img src="./Anh/youtube.png" class="footer__lienhe__icon"></a></span>
+            <span><a href="https://www.facebook.com/tintucvtv24"><img src="./Anh/facebook.png" class="footer__lienhe__icon"></a></span>
+            <span><a href="https://www.instagram.com/vtv24news/"><img src="./Anh/instagram.png" class="footer__lienhe__icon"></a></span>
+        </div>
+    </footer>
+    </body>
+</html>

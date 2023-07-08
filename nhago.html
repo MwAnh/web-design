@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GỖ - NHÀ GỖ</title>
+    <link rel="stylesheet" href="css/style_nhago.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        function Binhluan()
+        {
+            var a = document.dataform.ykien.value
+            document.getElementById('guiyk').innerHTML=a
+        };
+        $(document).ready(function(){
+            $("#show__nguyenlieu__menu").hide();
+            $("#header__nguyenlieu__menu").mouseenter(function(){
+                $("#header__nguyenlieu__menu").slideDown(function(){
+                    $("#show__nguyenlieu__menu").show();
+                }),
+                $("#header__nguyenlieu__menu").mouseleave(function(){
+                    $("#show__nguyenlieu__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__go__menu").hide();
+            $("#show__nguyenlieugo__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugo__menu").slideDown(function(){
+                    $("#show__go__menu").show();
+                    $("#go").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#go").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugo__menu").mouseleave(function(){
+                    $("#show__go__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__vai__menu").hide();
+            $("#show__nguyenlieuvai__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieuvai__menu").slideDown(function(){
+                    $("#show__vai__menu").show(),
+                    $("#vai").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#vai").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieuvai__menu").mouseleave(function(){
+                    $("#show__vai__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__giay__menu").hide();
+            $("#show__nguyenlieugiay__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugiay__menu").slideDown(function(){
+                    $("#show__giay__menu").show(),
+                    $("#giay").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#giay").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugiay__menu").mouseleave(function(){
+                    $("#show__giay__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#hoahuongduong").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#hoahuongduong").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#hoahuongduong").click(function()
+            {
+                window.location="hoahuongduong.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#quilling").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#quilling").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#quilling").click(function()
+            {
+                window.location="giaycuon.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#keptoc").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#keptoc").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#keptoc").click(function()
+            {
+                window.location="keptoc.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#lotly").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#lotly").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#lotly").click(function()
+            {
+                window.location="lotly.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#nhago").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#nhago").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#nhago").click(function()
+            {
+                window.location="nhago.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#tuivai").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#tuivai").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#tuivai").click(function()
+            {
+                window.location="tuivai.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#trangchu").click(function()
+            {
+                window.location="trangchu.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#gioithieu").click(function()
+            {
+                window.location="gioithieu.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#giayquilling").click(function()
+            {
+                window.location="giaycuon.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#kep").click(function()
+            {
+                window.location="keptoc.html"
+            })
+        });
+
+        $('#slide_show > li:first').css('display', 'block').addClass('active');
+  var isHoverBtn = false;
+
+  $('#next_slide').bind('click', function() {
+    runSlide(true);
+  });
+
+  $('#prev_slide').bind('click', function() {
+    runSlide(false);
+  });
+
+  $('.slide_btn').hover(function() {
+    isHoverBtn = true;
+  }, function() {
+    isHoverBtn = false;
+  });
+
+  setInterval(function(){
+    if (!isHoverBtn) {
+      runSlide(true);
+    }
+  }, 3000);
+
+
+  function runSlide(isNext) {
+    var oldItem = $('#slide_show > li.active');
+    var newItem;
+  
+    if (isNext) {
+      newItem = oldItem.next();
+
+      if (newItem.length === 0) {
+        newItem = $('#slide_show > li:first');
+      }
+    } else {
+      newItem = oldItem.prev();
+
+      if (newItem.length === 0) {
+        newItem = $('#slide_show > li:last');
+      }
+    }
+
+    if (newItem.length === 0) {
+      newItem = $('#slide_show > li:eq(0)');
+    }
+
+    oldItem.fadeOut(function() {
+      $(this).removeClass('active');
+    });
+
+    newItem.fadeIn(function() {
+        $(this).addClass('active');
+      });
+  }
+    </script>
+</head>
+<body>
+    <header>
+        <menu class="header__thanhcongcu__menu">
+            <div class="header__logo__image">
+                <img src="./Anh/logo.png" alt="" height="50px">
+            </div>
+            <div class="header__congcu__menu">
+                <p id="trangchu"><i class="fa fa-home" aria-hidden="true"></i>Trang chủ</p>
+            </div>
+            <div class="header__congcu2__menu">
+                <p id="gioithieu">Giới thiệu</p>
+            </div>
+            <div id="header__nguyenlieu__menu">
+                <p><b>Nguyên liệu</b> <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                <ul id="show__nguyenlieu__menu">
+                    <li id="show__nguyenlieu__li">
+                        <div id="show__nguyenlieugo__menu">
+                            <p><span class="header__nguyenlieugo__text" id="go">Gỗ</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__go__menu">
+                                <p id="lotly">Đồ lót ly</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="nhago">Nhà gỗ</p>
+                            </div>
+                        </div>
+                        <hr size="1px" color="darkgrey">
+                        <div id="show__nguyenlieuvai__menu">
+                            <p><span class="header__nguyenlieuvai__text" id="vai">Vải</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__vai__menu">
+                                <p id="tuivai">Túi vải</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="keptoc">Kẹp tóc</p>
+                            </div>
+                        </div>
+                        <hr size="1px" color="darkgrey">
+                        <div id="show__nguyenlieugiay__menu">
+                            <p><span class="header__nguyenlieugiay__text" id="giay">Giấy</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__giay__menu">
+                                <p id="hoahuongduong">Hoa hướng dương</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="quilling">Tranh cuộn Quilling</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__input__menu">
+                <input type="text" class="header__timkiem__input">
+            </div>
+            <div class="header__timkiem__menu">
+                <span><i class="fa fa-search" aria-hidden="true"></i></span>
+            </div>
+        </menu>
+    </header>
+<div class="container__background">
+    <div class="header__background" style="background-image:url(./Anh/2_1.jpg) ;">
+        <h1 class="header__title" id="tieude">Hướng dẫn cách làm nhà gỗ mini cực đáng yêu</h1>
+        <p class="header__subtext"> Bạn đã từng ăn những que kem mát lạnh, phía trong sẽ có những chiếc que bằng gỗ, 
+            đừng vội vứt đi vì bây giờ bạn đã có chỗ để sử dụng nó rồi đấy </p>
+    </div>
+    <div class="container__text">
+        <h2> Các bạn cần chuẩn bị một số nguyên liệu sau nhé </h2>
+        <ul>  
+           <li> Que kem ( sử dụng các loại que đều nhau)</li>
+        <li> Súng bắn keo </li>
+        <li> Keo nến </li>
+        <li> Kéo </li>
+        <li> Bút màu, bút chì và thước kẻ </li> </ul>
+        <h2> Quy trình thực hiện</h2>
+        <ul>
+        <p> <b> Bước 1: </b> Dùng súng bắn keo để nhỏ keo nến lên các phần cạnh của từng que kem gỗ, 
+            gắn chúng lại với nhau, cứ 6 que thành 1 tấm, cứ thế tạo thành 20 tấm. 
+            Tiếp theo bạn ghép 4 tấm xếp cạnh nhau để làm thành chiếc khung gỗ.</p>
+            <img src="./Anh/2_2.jpg" alt="" class="container__image" align="center">
+        <p> <b> Bước 2: </b> Tiếp theo, bạn lấy hai mảnh vải vừa rồi, hãy kiểm tra 2 mảnh vải kích thước 
+            bằng nhau và gấp đôi lại theo mặt ngược ra ngoài. Sau đó may theo đường viền cho thành hình túi. </p>
+        <p> <b> Bước 3: </b> Dùng các tấm gỗ đã ghép được ở bước 1 để làm một để làm tường cho ngôi nhà gỗ. 
+            Bạn dùng bút chì và thước để vẽ hình ô cửa sổ vào các tấm que gỗ đó sao cho một “bức tường” 
+            có 2 cửa sổ. 2 tấm loại 6 que gỗ bạn vẽ giống nhau ở chính giữa bức tường 2 cửa sổ thẳng nhau, 
+            một tấm loại 12 que gỗ bạn vẽ 2 cửa sổ thẳng nhau ở que kem số 4 và 5 cho đều.</p>
+        <p> <b> Bước 4: </b> Sau đó, bạn cắt theo hình vẽ cửa sổ và dùng những que gỗ mảnh hơn để làm các 
+            tấm chắn cửa sổ nữa nhé. Tiếp theo, bạn dán tường vào nền nhà 
+            (tạo nền nhà bằng cách gắn một tấm gỗ gồm 12 que kem gỗ giống bước 1).</p>
+            <img src="./Anh/2_3.jpg" alt="" class="container__image" align="center">
+        <p> <b> Bước 5: </b> Vì tạo hình ngôi nhà 2 tầng nên chúng ta phải tạo lan can bằng cách dùng các que gỗ 
+            mảnh nhỏ để làm cộc chống cho các tầng. Hãy nhớ dùng keo nến dán cho chắc chắn nhé. </p>
+            <img src="./Anh/2_4.jpg" alt="" class="container__image" align="center">
+        <p> <b> Bước 6: </b> Dùng các que kem gỗ dán sát nhau để tạo thành mái nhà, sao cho một đầu tạo thành các đường cong. 
+            Sau đó dùng các que kem gỗ cắt dán thành hình tam giác để dán vào phần trống của mái nhà </p> 
+        <p> <b> Bước 7: </b> Đặt ngôi nhà vào tấm nền to rồi gắn chúng cố định lại bằng keo nến. Để ngôi nhà hoàn thiện, 
+            bạn hãy làm một chiếc cầu thang nhỏ bằng các đoạn que gỗ mảnh rồi gắn vào tầng 1 và tầng 2. 
+            Bạn cũng có thể làm bậc tam cấp đi lên ngôi nhà và gắn vào một cách khéo léo.</p>
+            <img src="./Anh/2_7.jpg" alt="" class="container__image">
+            <p> <b> Bước 8: </b> Để ngôi nhà thêm “có hồn”, bạn có thể trang trí thêm một số món đồ nhỏ xinh như xích đu, ghế dài,…
+            Cuối cùng, hãy dán các hàng rào vào xung quanh ngôi nhà gỗ và làm cổng ra vào ở chính giữa. Dán thêm 2 que 
+            kem gỗ vào phần mái cho chắc chắn hơn. Ngôi nhà sẽ trở nên sinh động hơn nếu có hàng rào bao quanh. 
+            Bạn hãy tạo ra hàng rào bằng các que kem gỗ nhỏ hơn.</p>
+            <img src="./Anh/2_8.jpg" alt="" class="container__image-small">
+            <img src="./Anh/2_9.jpg" alt="" class="container__image-smaller">
+        <p> Với vài bước làm nhà gỗ mini đơn giản như thế này, bạn đã có thể sở hữu một món đồ trang trí nhà 
+            cực độc đáo và đáng yêu rồi. Thật không khó chút nào đúng không?
+            Chỉ cần một chút tỉ mỉ sáng tạo, bạn còn có thể tạo ra rất nhiều sản phẩm handmade khác nữa. 
+            Các bạn cùng chia sẻ sản phẩm với chúng mình nhé. Chúc các bạn thành công!</p>
+            <img src="./Anh/2_10.jpg" alt="" class="container__image-smaller">
+            <img src="./Anh/2_5.jpg" alt="" class="container__image-smaller">
+            <img src="./Anh/2_6.jpg" alt="" class="container__image-smaller">
+        </ul>
+        <p><a href="#tieude">Về đầu trang</a></p>
+    </div>
+    <footer>
+        <div id="footer__noidung__text">
+            <h3 class="footer__tieude__text">Có thể bạn quan tâm</h3>
+            <div class="container_slide_show">
+                <ul id="slide_show">
+                <li id="giayquilling"><p><i>Giấy cuộn quilling</i></p><img src="./css/bg_giay.jpg" ></li>
+                <li id="kep"><p><i>Kẹp tóc xinh xắn</i></p><img src="./css/bg_vai.jpg" ></li>
+                </ul>
+            </div>
+            <h3 class="footer__tieude__text">Bình luận</h3>
+            <form name="dataform" class="footer__edit__form">
+                <textarea name="" id="ykien" cols="30" rows="3" class="footer__edit__textarea"></textarea> <br>
+                <p id="yk" onclick="Binhluan()" class="footer__edit__button"><i class="fa fa-comments" aria-hidden="true"></i> Gửi</p>
+            </form>
+            <span id="guiyk" class="footer__gui__text"></span>
+        </div>
+        <div id="footer__lienhe__background">
+            <h3 class="footer__lienhe__text">Thông tin liên hệ</h3>
+            <img src="./Anh/agenda.png" height="20px"> <b class="footer__lienhe__text"> 09xx-xxx-xxx</b> <br> 
+            <img src="./Anh/email.png" height="20px"> <b class="footer__lienhe__text"> mianh.handmade@gmail.com</b> <br> <br>
+            <span><a href="https://www.youtube.com/watch?v=SuzXHUoFON8"><img src="./Anh/youtube.png" class="footer__lienhe__icon"></a></span>
+            <span><a href="https://www.facebook.com/tintucvtv24"><img src="./Anh/facebook.png" class="footer__lienhe__icon"></a></span>
+            <span><a href="https://www.instagram.com/vtv24news/"><img src="./Anh/instagram.png" class="footer__lienhe__icon"></a></span>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

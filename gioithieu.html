@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIỚI THIỆU</title>
+    <link rel="stylesheet" href="./css/style_gioithieu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fleur+De+Leah&family=Great+Vibes&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#show__nguyenlieu__menu").hide();
+            $("#header__nguyenlieu__menu").mouseenter(function(){
+                $("#header__nguyenlieu__menu").slideDown(function(){
+                    $("#show__nguyenlieu__menu").show();
+                }),
+                $("#header__nguyenlieu__menu").mouseleave(function(){
+                    $("#show__nguyenlieu__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__go__menu").hide();
+            $("#show__nguyenlieugo__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugo__menu").slideDown(function(){
+                    $("#show__go__menu").show();
+                    $("#go").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#go").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugo__menu").mouseleave(function(){
+                    $("#show__go__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__vai__menu").hide();
+            $("#show__nguyenlieuvai__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieuvai__menu").slideDown(function(){
+                    $("#show__vai__menu").show(),
+                    $("#vai").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#vai").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieuvai__menu").mouseleave(function(){
+                    $("#show__vai__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__giay__menu").hide();
+            $("#show__nguyenlieugiay__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugiay__menu").slideDown(function(){
+                    $("#show__giay__menu").show(),
+                    $("#giay").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#giay").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugiay__menu").mouseleave(function(){
+                    $("#show__giay__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#hoahuongduong").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#hoahuongduong").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#hoahuongduong").click(function()
+            {
+                window.location="hoahuongduong.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#quilling").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#quilling").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#quilling").click(function()
+            {
+                window.location="giaycuon.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#keptoc").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#keptoc").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#keptoc").click(function()
+            {
+                window.location="keptoc.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#lotly").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#lotly").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#lotly").click(function()
+            {
+                window.location="lotly.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#nhago").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#nhago").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#nhago").click(function()
+            {
+                window.location="nhago.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#tuivai").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#tuivai").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#tuivai").click(function()
+            {
+                window.location="tuivai.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#trangchu").click(function()
+            {
+                window.location="trangchu.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#gioithieu").click(function()
+            {
+                window.location="gioithieu.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#container__taiche__text").hide();
+            $("#container__taiche__box").click(function(){
+                $("#container__taiche__box").hide();
+                $("#container__taiche__text").slideDown();
+            }),
+            $("#container__taiche__text").click(function(){
+                $("#container__taiche__text").hide();
+                $("#container__taiche__box").slideDown();
+            })
+            });
+            $(document).ready(function(){
+            $("#container__taichego__text").hide();
+            $("#container__taichego__box").click(function(){
+                $("#container__taichego__box").hide();
+                $("#container__taichego__text").slideDown();
+            }),
+            $("#container__taichego__text").click(function(){
+                $("#container__taichego__text").hide();
+                $("#container__taichego__box").slideDown();
+            })
+            });
+            $(document).ready(function(){
+            $("#container__taichevai__text").hide();
+            $("#container__taichevai__box").click(function(){
+                $("#container__taichevai__box").hide();
+                $("#container__taichevai__text").slideDown();
+            }),
+            $("#container__taichevai__text").click(function(){
+                $("#container__taichevai__text").hide();
+                $("#container__taichevai__box").slideDown();
+            })
+            });
+            $(document).ready(function(){
+            $("#container__taichegiay__text").hide();
+            $("#container__taichegiay__box").click(function(){
+                $("#container__taichegiay__box").hide();
+                $("#container__taichegiay__text").slideDown();
+            }),
+            $("#container__taichegiay__text").click(function(){
+                $("#container__taichegiay__text").hide();
+                $("#container__taichegiay__box").slideDown();
+            })
+            });
+        function dataform(ten, email, tieude, nd)
+        {
+            this.ten=document.getElementById("hoten").value;
+            this.email=document.getElementById("email").value;
+            this.tieude=document.getElementById("td").value;
+            this.nd=document.getElementById("ndyk").value;
+            document.write(this.ten + '</p>');
+            document.write(this.email + '</p>');
+            document.write(this.tieude + '</p>');
+            document.write(this.nd + '</p>');
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <menu class="header__thanhcongcu__menu">
+                <div class="header__logo__image">
+                    <img src="./Anh/logo.png" alt="" height="50px">
+                </div>
+                <div class="header__congcu__menu">
+                    <p id="trangchu"><i class="fa fa-home" aria-hidden="true"></i>Trang chủ</p>
+                </div>
+                <div class="header__congcu2__menu">
+                    <p id="gioithieu">Giới thiệu</p>
+                </div>
+                <div id="header__nguyenlieu__menu">
+                    <p><b>Nguyên liệu</b> <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                    <ul id="show__nguyenlieu__menu">
+                        <li id="show__nguyenlieu__li">
+                            <div id="show__nguyenlieugo__menu">
+                                <p><span class="header__nguyenlieugo__text" id="go">Gỗ</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                                <div id="show__go__menu">
+                                    <p id="lotly">Đồ lót ly</p>
+                                    <hr size="1px" color="darkgrey">
+                                    <p id="nhago">Nhà gỗ</p>
+                                </div>
+                            </div>
+                            <hr size="1px" color="darkgrey">
+                            <div id="show__nguyenlieuvai__menu">
+                                <p><span class="header__nguyenlieuvai__text" id="vai">Vải</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                                <div id="show__vai__menu">
+                                    <p id="tuivai">Túi vải</p>
+                                    <hr size="1px" color="darkgrey">
+                                    <p id="keptoc">Kẹp tóc</p>
+                                </div>
+                            </div>
+                            <hr size="1px" color="darkgrey">
+                            <div id="show__nguyenlieugiay__menu">
+                                <p><span class="header__nguyenlieugiay__text" id="giay">Giấy</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                                <div id="show__giay__menu">
+                                    <p id="hoahuongduong">Hoa hướng dương</p>
+                                    <hr size="1px" color="darkgrey">
+                                    <p id="quilling">Tranh cuộn Quilling</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__input__menu">
+                    <input type="text" class="header__timkiem__input">
+                </div>
+                <div class="header__timkiem__menu">
+                    <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                </div>
+            </menu>
+        </header>
+        <br>
+    <section id="section__gioithieu__position">
+        <div id="container__gioithieu__text">
+            <h2 class="container__gioithieu__title">Giới thiệu</h2>
+            <p class="container__gioithieu__paragraph"> <i> Xuất phát từ đam mê, Mianh Handmade là một trang web được phát triển để đem đến 
+                những bài viết về handmade với mong muốn bảo vệ môi trường sống của chúng ta. 
+                Mong rằng trang web này sẽ giúp ích và đem đến cho mọi người một không gian sống 
+                sáng tạo và xanh hơn. </i>
+            </p>
+            <hr class="container__gioithieu__hr">
+        </div>
+        <div id="container__taiche__box">
+            <h1 class="container__taichebox__title">Mục tiêu hướng đến</h1>
+        </div>
+        <div id="container__taiche__text">
+            <h2 class="container__taiche__title">Mục tiêu hướng đến</h2>
+            <p class="container__taiche__paragraph">
+                Hiện nay các nhà khoa học đang cảnh báo lượng rác con người thải ra môi trường ngày một càng nhiều. 
+                Vì vậy họ đã đưa ra những phương pháp để ngăn chặn tình trạng này trước khi nó trở nên phức 
+                tạp hơn. Một trong số đó là Tái chế. Lợi ích của việc tái chế rất nhiều, nhưng quy về 4 vấn đề chính:
+                <ul>
+                    <li>Việc ta tái chế rác thải giúp <b>giảm lượng rác thải tại các bãi rác</b>, 
+                        song song ta cũng đã hạn chế lượng thải các độc tố ra ngoài môi trường.
+                    </li>
+                    <li>Các lượng rác thải được tái chế thì sẽ ít bị đốt hay chôn lấp. 
+                        Tránh gây tình trạng <b>ô nhiễm môi trường</b>, đặc biệt là môi trường nước, không khí và đất.
+                    </li>
+                    <li>Việc lấy sử dụng rác thải hay phế liệu để tái chế lại thành sản phẩm mới sẽ <b>tiết kiệm năng lượng</b>  
+                        hơn việc tạo các sản phẩm đấy từ các nguồn nguyên chất.
+                    </li>
+                    <li>Tái sử dụng rác thải sẽ giúp <b>giảm đi chi phí</b> cho nguồn tài nguyên của các công ty, nhà máy, xí nghiệp.</li>
+                </ul>
+            </p>
+        </div>
+        <div id="container__taichego__box">
+            <h1 class="container__taichebox__title">Tái chế gỗ</h1>
+        </div>
+        <div id="container__taichego__text">
+            <h2  class="container__taiche__title">Tái chế gỗ</h2>
+            <p class="container__taiche__paragraph">
+                Phế thải gỗ nếu không qua tái chế sẽ gây lãng phí nguồn tài nguyên 
+                cũng như tăng thêm áp lực lên hệ sinh thái khi bị khai thác gỗ quá mức.
+            </p>
+            <p class="container__taiche__paragraph">
+                Việc tái chế phế thải gỗ đã được các nước trên thế giới ủng hộ. 
+                Theo số liệu thống kê, tại Mỹ với khoảng 70 triệu tấn gỗ được chuyển tới bãi chôn lấp 
+                thì sẽ có khoảng 30 triệu tấn có thể tái sử dụng. Gỗ đã qua sử dụng ngoài mục đích làm củi 
+                đốt có thể tái chế thành đồ trang trí, đồ chơi, đồ gia dụng hay vật liệu xây dựng.
+            </p>
+        </div>
+        <div id="container__taichevai__box">
+            <h1 class="container__taichebox__title">Tái chế vải</h1>
+        </div>        
+        <div id="container__taichevai__text">
+            <h2  class="container__taiche__title">Tái chế vải</h2>
+            <p class="container__taiche__paragraph">
+                Ngành may mặc vốn là một thế mạnh tạo điều kiện và giải quyết được khối lượng việc làm lớn, 
+                góp phần tăng GDP cho đất nước. Tuy nhiên, đi kèm với đó là khối lượng cực lớn các phế liệu, 
+                hàng lỗi phát sinh từ các công đoạn sản xuất.
+            </p>
+            <p class="container__taiche__paragraph">
+                Với việc thế giới ngày càng đẩy mạnh bảo vệ môi trường sống trên Trái Đất thì việc tái chế 
+                vải vụn là một giải pháp cực kỳ giá trị. Không còn việc đốt, vứt bỏ tràn lan vải vụn thì 
+                môi trường sẽ được trong lành và đảm bảo sức khỏe các loài sinh sống trên hành tinh. 
+                Đồng thời, mỹ quan môi trường cũng sẽ sạch đẹp hơn. 
+            </p>
+        </div>
+        <div id="container__taichegiay__box">
+            <h1 class="container__taichebox__title">Tái chế giấy</h1>
+        </div>   
+        <div id="container__taichegiay__text">
+            <h2  class="container__taiche__title">Tái chế giấy</h2>
+            <p class="container__taiche__paragraph">
+                Mỗi ngày, hàng tấn giấy được tiêu thụ trên thế giới. Trừ khi được tái chế, giấy trở thành rác, 
+                góp phần gây ra các vấn đề như ô nhiễm. Tái chế giấy có thể làm giảm bớt các vấn đề này 
+                bằng cách biến giấy phế liệu này thành sản phẩm mới.
+            </p>
+            <p class="container__taiche__paragraph">
+                Theo Cục Bảo vệ Môi sinh Hoa Kỳ thống kê, rác thải giấy chiếm 28% lượng rác thải rắn, mỗi tấn giấy chiếm khoảng 
+                3,3m3 diện tích bãi rác. Với số lượng giấy đó tái chế sẽ tiết kiệm khoảng 26.500 lít nước, năng lượng cho một 
+                hộ gia đình dùng trong 6 tháng, có thể cứu sống 17 cây xanh, góp phần bảo vệ rừng. 
+                Rừng là nơi ở của rất nhiều loài động thực vật, góp phần giữ cân bằng hệ sinh thái.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div id="footer__form__text">
+            <form name="lienhe">
+                <h2 class="footer__form__title">Đóng góp ý kiến</h2> <br>
+                    <input class="footer__form__box" type="text" id="hoten" value="Họ tên" maxlength="30"> <br>
+                    <input class="footer__form__box" type="email" id="email" value="Email" maxlength="40"> <br>
+                    <select class="footer__form__box" name="tieude" id="td">
+                        <option id="op1" selected="selected" disabled="disabled">Tiêu đề</option>
+                        <option id="op2">Đặt câu hỏi</option>
+                        <option id="op3">Góp ý</option>
+                        <option id="op4">Khác</option>
+                    </select> <br>
+                    <textarea class="footer__form__box" name="noidung" rows="5" id="ndyk">Nội dung</textarea> <br>
+                    <input class="footer__form__submit" type="submit" name="guidi" value="GỬI ĐI" onclick="dataform()">
+                </table>
+            </form>
+        </div>
+        <div id="footer__lienhe__background">
+            <h3 class="footer__lienhe__text">Thông tin liên hệ</h3>
+            <img src="./Anh/agenda.png" height="20px"> <b class="footer__lienhe__text"> 09xx-xxx-xxx</b> <br> 
+            <img src="./Anh/email.png" height="20px"> <b class="footer__lienhe__text"> mianh.handmade@gmail.com</b> <br> <br>
+            <span><a href="https://www.youtube.com/watch?v=SuzXHUoFON8"><img src="./Anh/youtube.png" class="footer__lienhe__icon"></a></span>
+            <span><a href="https://www.facebook.com/tintucvtv24"><img src="./Anh/facebook.png" class="footer__lienhe__icon"></a></span>
+            <span><a href="https://www.instagram.com/vtv24news/"><img src="./Anh/instagram.png" class="footer__lienhe__icon"></a></span>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

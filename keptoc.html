@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KẸP TÓC</title>
+    <link rel="stylesheet" href="./css/style_kep.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        function Binhluan()
+        {
+            var a = document.dataform.ykien.value
+            document.getElementById('guiyk').innerHTML=a
+        };
+        $(document).ready(function(){
+            $("#show__nguyenlieu__menu").hide();
+            $("#header__nguyenlieu__menu").mouseenter(function(){
+                $("#header__nguyenlieu__menu").slideDown(function(){
+                    $("#show__nguyenlieu__menu").show();
+                }),
+                $("#header__nguyenlieu__menu").mouseleave(function(){
+                    $("#show__nguyenlieu__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__go__menu").hide();
+            $("#show__nguyenlieugo__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugo__menu").slideDown(function(){
+                    $("#show__go__menu").show();
+                    $("#go").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#go").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugo__menu").mouseleave(function(){
+                    $("#show__go__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__vai__menu").hide();
+            $("#show__nguyenlieuvai__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieuvai__menu").slideDown(function(){
+                    $("#show__vai__menu").show(),
+                    $("#vai").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#vai").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieuvai__menu").mouseleave(function(){
+                    $("#show__vai__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#show__giay__menu").hide();
+            $("#show__nguyenlieugiay__menu").mouseenter(function()
+            {
+                $("#show__nguyenlieugiay__menu").slideDown(function(){
+                    $("#show__giay__menu").show(),
+                    $("#giay").mouseenter(function(){
+                        $(this).css({"color": "#FF7B89"});
+                    }),
+                    $("#giay").mouseleave(function(){
+                        $(this).css({"color": "#120C6E"});
+                    });
+                }),
+                $("#show__nguyenlieugiay__menu").mouseleave(function(){
+                    $("#show__giay__menu").hide();
+                })
+            })
+        });
+        $(document).ready(function(){
+            $("#hoahuongduong").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#hoahuongduong").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#hoahuongduong").click(function()
+            {
+                window.location="hoahuongduong.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#quilling").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#quilling").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#quilling").click(function()
+            {
+                window.location="giaycuon.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#keptoc").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#keptoc").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#keptoc").click(function()
+            {
+                window.location="keptoc.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#lotly").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#lotly").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#lotly").click(function()
+            {
+                window.location="lotly.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#nhago").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#nhago").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#nhago").click(function()
+            {
+                window.location="nhago.html";
+            })
+        })
+        $(document).ready(function(){
+            $("#tuivai").mouseenter(function(){
+                $(this).css({"color": "#FF7B89"});
+            }),
+            $("#tuivai").mouseleave(function(){
+                $(this).css({"color": "#120C6E"});
+            }),
+            $("#tuivai").click(function()
+            {
+                window.location="tuivai.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#trangchu").click(function()
+            {
+                window.location="trangchu.html"
+            })
+        })
+        $(document).ready(function(){
+            $("#gioithieu").click(function()
+            {
+                window.location="gioithieu.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#hoa").click(function()
+            {
+                window.location="hoahuongduong.html"
+            })
+        });
+        $(document).ready(function(){
+            $("#giayquilling").click(function()
+            {
+                window.location="giaycuon.html"
+            })
+        });
+
+        $('#slide_show > li:first').css('display', 'block').addClass('active');
+  var isHoverBtn = false;
+
+  $('#next_slide').bind('click', function() {
+    runSlide(true);
+  });
+
+  $('#prev_slide').bind('click', function() {
+    runSlide(false);
+  });
+
+  $('.slide_btn').hover(function() {
+    isHoverBtn = true;
+  }, function() {
+    isHoverBtn = false;
+  });
+
+  setInterval(function(){
+    if (!isHoverBtn) {
+      runSlide(true);
+    }
+  }, 3000);
+
+
+  function runSlide(isNext) {
+    var oldItem = $('#slide_show > li.active');
+    var newItem;
+  
+    if (isNext) {
+      newItem = oldItem.next();
+
+      if (newItem.length === 0) {
+        newItem = $('#slide_show > li:first');
+      }
+    } else {
+      newItem = oldItem.prev();
+
+      if (newItem.length === 0) {
+        newItem = $('#slide_show > li:last');
+      }
+    }
+
+    if (newItem.length === 0) {
+      newItem = $('#slide_show > li:eq(0)');
+    }
+
+    oldItem.fadeOut(function() {
+      $(this).removeClass('active');
+    });
+
+    newItem.fadeIn(function() {
+        $(this).addClass('active');
+      });
+  }
+    </script>
+</head>
+<body>
+    <header>
+        <menu class="header__thanhcongcu__menu">
+            <div class="header__logo__image">
+                <img src="./Anh/logo.png" alt="" height="50px">
+            </div>
+            <div class="header__congcu__menu">
+                <p id="trangchu"><i class="fa fa-home" aria-hidden="true"></i>Trang chủ</p>
+            </div>
+            <div class="header__congcu2__menu">
+                <p id="gioithieu">Giới thiệu</p>
+            </div>
+            <div id="header__nguyenlieu__menu">
+                <p><b>Nguyên liệu</b> <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                <ul id="show__nguyenlieu__menu">
+                    <li id="show__nguyenlieu__li">
+                        <div id="show__nguyenlieugo__menu">
+                            <p><span class="header__nguyenlieugo__text" id="go">Gỗ</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__go__menu">
+                                <p id="lotly">Đồ lót ly</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="nhago">Nhà gỗ</p>
+                            </div>
+                        </div>
+                        <hr size="1px" color="darkgrey">
+                        <div id="show__nguyenlieuvai__menu">
+                            <p><span class="header__nguyenlieuvai__text" id="vai">Vải</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__vai__menu">
+                                <p id="tuivai">Túi vải</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="keptoc">Kẹp tóc</p>
+                            </div>
+                        </div>
+                        <hr size="1px" color="darkgrey">
+                        <div id="show__nguyenlieugiay__menu">
+                            <p><span class="header__nguyenlieugiay__text" id="giay">Giấy</span> <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                            <div id="show__giay__menu">
+                                <p id="hoahuongduong">Hoa hướng dương</p>
+                                <hr size="1px" color="darkgrey">
+                                <p id="quilling">Tranh cuộn Quilling</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__input__menu">
+                <input type="text" class="header__timkiem__input">
+            </div>
+            <div class="header__timkiem__menu">
+                <span><i class="fa fa-search" aria-hidden="true"></i></span>
+            </div>
+        </menu>
+    </header>
+    <section>
+        <h1 class="container__tieude__text" id="tieude">Làm kẹp tóc bằng vải</h1>    
+        <p class="container__loidan__text">
+            Đôi khi không cần cầu kỳ, chỉ chút vải và ren, phối hợp màu sắc hài hòa hoặc ấn tượng, là bạn đã có được bông hoa vải dễ thương trang trí kẹp tóc rồi. Chúng ta cùng tham khảo cách làm kẹp tóc bằng vải nỉ nhé!
+        </p>
+        <div class="container__noidung__text">
+            <p>
+                Chỉ cần vài thao tác đơn giản là các bạn đã có thể tô điểm thêm cho chiếc kẹp tóc đáng yêu của mình lên một sự cute hoàn toàn mới. <br>
+                Tuỳ theo kích thước và màu sắc cũng như kiểu dáng của kẹp tóc mà các bạn chuẩn bị vải và chỉ tương ứng. Ở đây mình chọn chiếc kẹp thon dài 8 cm và làm bọc cho kẹp tóc hình chữ nhật. <br>
+            </p>
+            <h2 class="container__khoangcachtieude__text">Thêu hình trang trí lên vải</h2>
+            <p>
+                Đầu tiên các bạn cần chuẩn bị vải và chỉ màu để thêu họa tiết trang trí lên 1 ô chữ nhật có diện tích bao vừa thân kẹp tóc. <br>
+                <img src="./Anh/hair_clip_10.png" alt=""> <br>
+                Thêu hình hoa trang trí theo mẫu <br>
+                <img src="./Anh/hair_clip_11.png" alt=""> <br>
+                Tiếp đến thêu lá trang trí <br>
+                <img src="./Anh/hair_clip_1.png" alt=""> <br>
+                Cắt hình thêu ra theo kích thước của kẹp tóc <br>
+                Sau đó khâu bọc phần hình trang trí lên trên thân kẹp tóc <br>
+            </p>
+            <h2 class="container__khoangcachtieude__text">Làm lớp lót kẹp tóc</h2>
+            <p>
+                <img src="./Anh/hair_clip_2.png" alt=""> <br>
+                Vẽ lên lớp vải linen theo kích thước của kẹp tóc <br>
+                <img src="./Anh/hair_clip_3.png" alt=""> <br>
+                Cắt miếng vải linen ra rồi đặt vào chân kẹp tóc <br>
+                <img src="./Anh/hair_clip_4.png" alt=""> <br>
+                Đánh dấu vị trí để luồn phần chân kẹp tóc qua <br>
+                <img src="./Anh/hair_clip_5.png" alt=""> <br>
+                Cắt một khe nhỏ vừa đủ phần chân kẹp tóc <br>
+                <img src="./Anh/hair_clip_6.png" alt=""> <br>
+                Luồn chân kẹp tóc qua khe vừa cắt <br>
+                <img src="./Anh/hair_clip_7.png" alt=""> <br>
+                Sau đó khâu miếng lót vào kẹp tóc <br>
+                <img src="./Anh/hair_clip_8.png" alt=""> <br>
+                Sau khi may lót kẹp tóc xong cắt phần chỉ thừa <br>
+                <img src="./Anh/hair_clip_9.png" alt=""> <br>
+                Vậy là bạn đã hoàn thành xong một chiếc kẹp tóc handmade siêu đáng yêu <br>
+                <b><i>Một số mẫu mọi người có thể tham khảo</i></b> <br>
+                <img src="./Anh/kep_mau_1.jpg" alt="">
+                <img src="./Anh/kep_mau_3.jpg" alt="">
+                <img src="./Anh/kep_mau_2.jpg" alt="">
+            </p>
+            <p><a href="#tieude">Về đầu trang</a></p>
+        </div>
+    </section>
+    <footer>
+        <div id="footer__noidung__text">
+            <h3 class="footer__tieude__text">Có thể bạn quan tâm</h3>
+            <div class="container_slide_show">
+                <ul id="slide_show">
+                  <li id="giayquilling"><p><i>Giấy cuộn quilling</i></p><img src="./css/bg_giay.jpg" ></li>
+                  <li id="hoa"><p><i>Hoa hướng dương</i></p><img src="./css/bg_huongduong1.jpg" ></li>
+                </ul>
+            </div>
+            <h3 class="footer__tieude__text">Bình luận</h3>
+            <form name="dataform" class="footer__edit__form">
+                <textarea name="" id="ykien" cols="30" rows="3" class="footer__edit__textarea"></textarea> <br>
+                <p id="yk" onclick="Binhluan()" class="footer__edit__button"><i class="fa fa-comments" aria-hidden="true"></i> Gửi</p>
+            </form>
+            <span id="guiyk" class="footer__gui__text"></span>
+        </div>
+        <div id="footer__lienhe__background">
+            <h3 class="footer__lienhe__text">Thông tin liên hệ</h3>
+            <img src="./Anh/agenda.png" height="20px"> <b class="footer__lienhe__text"> 09xx-xxx-xxx</b> <br> 
+            <img src="./Anh/email.png" height="20px"> <b class="footer__lienhe__text"> mianh.handmade@gmail.com</b> <br> <br>
+            <span><a href="https://www.youtube.com/watch?v=SuzXHUoFON8"><img src="./Anh/youtube.png" class="footer__lienhe__icon"></a></span>
+            <span><a href="https://www.facebook.com/tintucvtv24"><img src="./Anh/facebook.png" class="footer__lienhe__icon"></a></span>
+            <span><a href="https://www.instagram.com/vtv24news/"><img src="./Anh/instagram.png" class="footer__lienhe__icon"></a></span>
+        </div>
+    </footer>
+</body>
+</html>
